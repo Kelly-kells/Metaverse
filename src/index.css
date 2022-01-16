@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+body{
+  background-color: black;
+
+
+}
+.search{
+bottom: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  font-size: 1.2rem;
+  top: 0;
+}
+.nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+}
+.nav-logo{
+  
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  flex-grow: 1;
+  
+}
+.nav-menu{
+  display: flex;
+  list-style: none;
+  text-align: center;
+  
+}
+#nav-links{
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+.nav-item{
+  line-height: 40px;
+  margin-right: 1rem;
+}
+.nav-item:after{
+   content: "";
+   display: block;
+   height: 3px;
+   width: 0;
+   background: transparent;
+   transition: width 0.7s ease,background-color 0.5s;
+}
+.nav-item:hover:after{
+  width: 100%;
+  background: purple;
+}
+.nav-icon{
+  display: none;
+}
+.nav-item .active {
+  color:purple;
+  border: 1px solid purple;
+}
+@media screen and (max-width:960px) {
+  
+
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+   }
+ 
+   .nav-icon{
+     display: block;
+     position: absolute;
+     top: 0;
+     right: 0;
+     transform: translate(-100, 60%);
+     font-size:1.8rem;
+     cursor: pointer;
+     color: pink;
+   }
+   #nav-links{
+     padding: 1rem;
+     width: 100%;
+     display: table;
+   }
+   .nav-item .active{
+     color: cyan;
+     border: noneS;
+   }
+   .nav-menu.active{
+     background-color:purple;
+     left:0px;
+     opacity: 1;
+     transition: all 0.5s ease;
+   }
 }
