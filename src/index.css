@@ -1,9 +1,11 @@
 
 body{
   background-color: black;
-
+color: white;
 
 }
+
+/**NAVBAR**/
 .search{
 bottom: 10px;
 }
@@ -70,6 +72,48 @@ bottom: 10px;
   color:purple;
   border: 1px solid purple;
 }
+
+/**NAVBAR ENDS**/
+
+/**MARKET_PLACE SECTION**/
+.market-container{
+  margin-left: 35px;
+  margin-top: 50px;
+}
+.intro h2{
+  color: rebeccapurple;
+  text-shadow: 1px 1px purple;
+  font-size: 2rem;
+}
+.intro h1{
+text-shadow: 3px 3px purple;
+font-size: 2.5rem;
+}
+
+.intro p{
+  font-size: 1.5rem;
+   color: rebeccapurple;
+}
+.market-container button{
+  width: 130px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  
+}
+.market-container button:hover{
+  background-color: white;
+  color: purple;
+  transition: all .2s;
+  width: 140px;
+  font-size: 1rem;
+}
+
+
+
 @media screen and (max-width:960px) {
   
 
